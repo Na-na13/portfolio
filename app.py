@@ -13,7 +13,7 @@ def get_repos():
     response = requests.get(api_url).json()
     repos = []
     for data in response:
-        if 'ohtu' not in data['name']:
+        if 'ohtu' not in data['name'] or 'minitex' not in data['name']:
             repo = {}
             repo['name'] = data['name'].replace("-", " ")
             repo['description'] = data['description']
