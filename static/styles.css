@@ -1,0 +1,11 @@
+.navbar {
+    padding: 10px;
+    background: #EFEFEF;
+    text-align: center;
+  }
+.navbar a {
+    text-align: center;
+}
+.navbar a:hover {
+    color: black;
+}

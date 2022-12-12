@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+        <div class="repo">
+            {% for repo in repos %}
+            <p>
+                <strong>{{ repo['name'] }}</strong><br>
+                {{ repo['description'] }}<br>
+                {{ repo['language'] }} <br>
+                {{ repo['topics'] }}<br>
+                <a href=repo['html_url']>{{ repo['html_url']  }}</a>
+            </p>
+            {% endfor %}
+
+        </div>
+{% endblock %}
