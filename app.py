@@ -13,13 +13,14 @@ def get_repos():
     response = requests.get(api_url).json()
     repos = []
     for data in response:
-        if 'ohtu' not in data['name'] or 'minitex' not in data['name']:
-            repo = {}
-            repo['name'] = data['name'].replace("-", " ")
-            repo['description'] = data['description']
-            repo['language'] = data['language']
-            repo['topics'] = data['topics']
-            repo['html_url'] = data['html_url']
-            repo['updated_at'] = data['updated_at']
-            repos.append(repo)
+        if 'ohtu' not in data['name']:
+            if 'minitex' not in data['name']:
+                repo = {}
+                repo['name'] = data['name'].replace("-", " ").title()
+                repo['description'] = data['description']
+                repo['language'] = data['language']
+                repo['topics'] = data['topics']
+                repo['html_url'] = data['html_url']
+                repo['updated_at'] = data['updated_at']
+                repos.append(repo)
     return render_template("projects.html", repos=repos)
