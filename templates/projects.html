@@ -2,16 +2,16 @@
 {% block content %}
         <div class="info-text">
             <h1>Projektini</h1>
-            <p>Täältä löytyvät projektit ovat opintojeni aikana toteutettuja sovelluksia. Projektit 
-                ovat aiheiltaan erilaisia 2D-peleistä web-sovelluksiin. Projektit ovat pääosin toteutettuja
-                Pythonilla, web-sovelluksissa front-end toteutettu HTML/CSS -yhdistelmällä. Projektin nimeä
-                klikkaamalla pääsee tarkastelemaan tämän projektin GitHub-repositoria.
+            <p>Täältä löytyvät projektit ovat opintojeni aikana toteutettuja sovelluksia, joissa 
+                aiheina mm. yksinkertaiset 2D-pelit ja web-sovellukset. Projektit ovat pääosin toteutettuja
+                Pythonilla, web-sovelluksissa front-end toteutettu HTML/CSS -yhdistelmällä. Klikkaamalla
+                projektin nimeä pääsee tarkastelemaan tämän projektin GitHub-repositoria.
             </p>
         </div>
         <div class="repo-container">
             {% for repo in repos %}
             <div class="repo">
-                <a href="{{ repo['html_url'] }}">{{ repo['name']  }}</a> <br>
+                <a href="{{ repo['html_url'] }}" target="_blank">{{ repo['name']  }}</a> <br>
                 <div class=repo-description>{{ repo['description'] }}</div> <br>
                 {% for topic in repo['topics'] %}
                     <button class=repo-topics>{{ topic }}</button>

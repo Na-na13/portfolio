@@ -1,6 +1,7 @@
 body {
     background-color: white;
     font-family: "Trebuchet MS";
+    color: #874E4C;
 }
 .navbar {
     padding: 10px;
@@ -10,7 +11,6 @@ body {
     box-shadow: 0px 7px 3px rgba(220, 220, 220, .2);
     position: sticky;
     top: 0;
-    width: 100%;
     
   }
 .navbar a {
@@ -34,7 +34,8 @@ body {
 }
 .repo-container {
     background-color: #F7DFD4;
-    padding: 50px 100px;
+    margin: 0px 50px;
+    padding: 50px 80px;
     border-radius: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
