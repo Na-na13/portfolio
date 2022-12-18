@@ -1,8 +1,16 @@
+body {
+    background-color: white;
+    font-family: "Trebuchet MS";
+}
 .navbar {
     padding: 10px;
-    background: #EFEFEF;
+    background: white;
     text-align: center;
     font-size: 20px;
+    box-shadow: 0px 7px 3px rgba(220, 220, 220, .2);
+    position: sticky;
+    top: 0;
+    width: 100%;
     
   }
 .navbar a {
@@ -10,10 +18,49 @@
     padding: 20px;
     text-decoration: none;
     font-family: "Trebuchet MS";
+    color: #874E4C;
 }
 .navbar a:hover {
     color: black;
     text-decoration: underline;
     font-weight: bold;
 
+}
+.info-text {
+    margin: 50px 100px;
+    padding: 10px;
+    background-color:white;
+    border-radius: 8px;
+}
+.repo-container {
+    background-color: #F7DFD4;
+    padding: 50px 100px;
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.repo {
+    padding: 10px;
+    background-color:white;
+    border-radius: 12px;
+}
+.repo a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #874E4C;
+}
+.repo a:hover {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.repo button {
+    background-color: #874E4C;
+    border-radius: 12px;
+    color: #F7DFD4;
+}
+.repo-description{
+    font-family: Arial, Helvetica, sans-serif;
 }
