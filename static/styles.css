@@ -8,6 +8,9 @@ body {
     padding: 10px;
     text-align: center;
     font-size: 20px;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 10px 80px;
     box-shadow: 0px 7px 3px rgba(220, 220, 220, .2);
     position: sticky;
     top: 0;
