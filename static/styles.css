@@ -55,6 +55,7 @@ img {
 }
 .box button {
     border-color:#874E4C;
+    border-radius: 4px;
     font-size: 16px;
     margin: 2px;
     color: #874E4C;
@@ -68,7 +69,6 @@ img {
 .info-text {
     max-width: 1000px;
     margin: 0px auto;
-    padding: 10px;
     padding: 5px 80px 20px;
     background-color: white;
 }
