@@ -26,7 +26,6 @@ body {
 }
 .index-wrapper {
     display: grid;
-    grid-template-columns: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas: 
@@ -38,6 +37,7 @@ body {
     padding: 50px 80px;
     gap: 20px;
     max-width: 1000px;
+    background-color: white;
 }
 .intro-text {
     grid-area: intro;
@@ -69,22 +69,28 @@ img {
     max-width: 1000px;
     margin: 0px auto;
     padding: 10px;
+    padding: 5px 80px 20px;
+    background-color: white;
+}
+.info-text h1 {
+    text-align: center;
 }
 .repo-container {
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
     max-width: 1000px;
     margin: 0px auto;
-    padding: 0px 80px 50px;
+    padding: 5px 80px 50px;
 
 }
 
 .repo {
-    margin: 10px;
     padding: 10px;
     background-color: white;
-    box-shadow: 7px 7px 3px rgba(220, 220, 220, .5);
+    border: 1px solid #874E4C;
+    border-radius: 4px;
 }
 .repo a {
     font-weight: bold;
