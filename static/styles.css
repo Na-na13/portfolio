@@ -33,8 +33,7 @@ body {
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas: 
         "img intro intro"
-        "txt1 txt1 boxes"
-        "txt2 txt2 txt2";
+        "txt1 txt1 boxes";
 
     margin: 0px auto;
     padding: 50px 80px;
@@ -66,9 +65,7 @@ img {
 .career-text {
     grid-area: txt1;
 }
-.strenghts {
-    grid-area: txt2;
-}
+
 .info-text {
     max-width: 1000px;
     margin: 0px auto;
